@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+ </head>
+ <body>
+   <p class="ex">
+    &lt;!DOCTYPE html&gt;</br>
+    &lt;html&gt;</br>
+     &lt;head&gt;</br>
+      &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+      &lt;style&gt;</br>
+       .ex {</br>
+        border: solid 1px #000000;</br>
+        background: #fffff5;</br>
+        font-family: &quot;Courier New&quot;, Courier, monospace; </br>
+        padding: 7px;</br>
+        font-size: 80%;</br>
+        margin: 0 0 1em;</br>
+       }</br>
+      &lt;/style&gt;</br>
+     &lt;/head&gt;</br>
+     &lt;body&gt;</br>
+        &lt;p class=&quot;ex&quot;&gt;</br>
+            &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;1. Składnia teoretyczna&lt;/font&gt;&lt;/br&gt;</br>
+            &lt;textarea&gt;</br>
+                &amp;lt;head&amp;gt;</br>
+                    (...)</br>
+                    &amp;lt;link rel=&quot;Stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&amp;gt;</br>
+                    (...)</br>
+                    &amp;lt;/head&amp;gt;</br>
+           &lt;/textarea&gt;&lt;/br&gt;</br>
+           &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Gdzie &quot;style.css&quot; jest zewnętrznym arkuszem styl&oacute;w. Natomiast znaki (...) oznaczają inne&lt;/br&gt;</br>
+            polecenia, kt&oacute;re zwykle pojawiają się w nagł&oacute;wku dokumentu, np. deklaracja strony kodowej.&lt;/br&gt;</br>
+        &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;2. Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz</br>
+            ile razy może on występować w dokumencie, jako podłączenie stylu CSS?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Wystarczy wpisać w treści nagł&oacute;wkowej każdego z dokument&oacute;w (pomiędzy</br>
+            znacznikami &amp;lt;head&amp;gt; a &amp;lt;/head&amp;gt;)&lt;/br&gt;</br>
+        Znacznik LINK jest odpowiedzialny za podłączenia CSS do dokumentu&lt;/br&gt;</br>
+        Można dołączyć dowolną liczbę zewnętrznych arkuszy styl&oacute;w - każdy jako osobny element &amp;lt;link rel=&quot;Stylesheet&quot; /&amp;gt;&lt;/br&gt;</br>
+    
+        &lt;/font&gt;&lt;/br&gt;</br>
+    &lt;/p&gt;</br>
+    
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;3. Jaka jest najprostsza forma wstawiania stylu zewnętrznego&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Wystarczy wpisać w treści nagł&oacute;wkowej każdego z dokument&oacute;w (pomiędzy</br>
+            znacznikami &amp;lt;head&amp;gt; a &amp;lt;/head&amp;gt;) przedstawioną powyżej linijkę:&lt;/font&gt;&lt;/br&gt;</br>
+    
+            &lt;textarea&gt;</br>
+                    &amp;lt;link rel=&quot;Stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&amp;gt;</br>             
+           &lt;/textarea&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;4. Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad</br>
+            musi być zachowana przy większej ilości dołączanych styli?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;W pojedynczym dokumencie HTML można dołączyć dowolną liczbę zewnętrznych arkuszy styl&oacute;w - każdy jako osobny element &amp;lt;link rel=&quot;stylesheet&quot;&amp;gt&lt;/font&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;5. Co się dzieje w przypadku konflikt&oacute;w? Przez konflikt rozumiemy, gdy te same style są definiowane w r&oacute;żnych arkuszach styli podłączone do tego samego arkusza.&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;W przypadku konflikt&oacute;w, ważniejsze będą deklaracje z arkusza dołączonego p&oacute;źniej&lt;/font&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Zewnętrzny arkusz styl&oacute;w jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania wystarczy zwykły edytor tekst.&lt;/font&gt;&lt;/br&gt;</br>   
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Można się posłużyć specjalnym edytorem CSS.&lt;/font&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;8. Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Plik będący zewnętrznym arkuszem styl&oacute;w musi mieć rozszerzenie *.css&lt;/font&gt;&lt;/br&gt;</br>
+    
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;9. Jakie są zalety zewnętrznego arkusza styli?&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt; Zalety zewnętrznego arkusza styli:&lt;/br&gt;</br>
+    
+       1.Wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wsp&oacute;lne cechy.&lt;/br&gt;</br>
+         2.Jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich &lt;/br&gt;</br>
+        stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz styl&oacute;w, bez konieczności zmiany każdej strony osobno&lt;/br&gt;</br>
+    
+    
+    
+    
+    
+        &lt;/font&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;10. Uwagi na temat pisania w CSS.&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Część poleceń styl&oacute;w nie jest interpretowana przez niekt&oacute;re przeglądarki internetowe lub jest obsługiwana odmiennie. Dlatego zawsze należy sprawdzać efekty w praktyce - jeśli&lt;/br&gt;</br>
+         to możliwe, to najlepiej w kilku najbardziej popularnych przeglądarkach: Microsoft Internet Explorer, Netscape/Mozilla/Firefox (czyli przeglądarki oparte na silniku Gecko), Opera.&lt;/font&gt;&lt;/br&gt;</br>
+    
+        
+    &lt;/p&gt;</br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    &lt;/body&gt;</br>
+    &lt;/html&gt;</br>
+  </p>
+ </body>
+</html>

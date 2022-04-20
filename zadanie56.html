@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+ </head>
+ <body>
+Składnia teoretyczna:
+   <p class="ex">
+    selektor.klasa { cecha: wartość }
+</p>
+
+<strong>Klasa</strong> to wartość atrybutu class="..." nadanego selektorowi z poziomu języka (X)HTML.
+<strong>"cecha" oraz "wartość"</strong> określają atrybuty elementu nadane poprzez style.
+
+
+<p><h2>Selektorem może być dowolny znacznik,</h2></br>
+&nbsp&nbsp&nbsp&nbsp&nbspnp. p -> akapit,</br>
+&nbsp&nbsp&nbsp&nbsp&nbsph1 -> tytuł,</br>
+&nbsp&nbsp&nbsp&nbsp&nbsptd -> komórka tabeli i inne.</br></p>
+
+
+
+<p><h2>Nazwą może być pojedynczy wyraz, nie może on zawierać</h2></br>
+a)spacji, kropki, przecinka, dwukropka,</br>
+pytajnika, nawiasów,</br>
+h)znaku równości, plusa itp.</br>
+Może zawierać:</br>
+a)litery (A-Z, a-z), cyfry (0-9),</br>
+myślniki ("-") i podkreślniki ("_").</br>
+d)Lepiej nie używać polskich liter..</br>
+Nazwa nie może zaczynać się od cyfry ani myślnika</br>
+Gdy chcemy użyć znaków "zakazanych" znaków, należy należy w deklaracji klasy</br>
+poprzedzić je odwróconym ukośnikiem "\", np. reguła: selektor.B\&W\? { cecha:</br>
+wartość } odpowiada klasie: class="B&W?"..</p>
+
+<p><h2>Jakie jest zastosowanie klasy?</h2>
+Deklaracja klasy jest przydatna szczególnie, jeśli na wielu stronach serwisu znajdują się</br>
+elementy mające takie samo formatowanie, a dodatkowo nie można dla nich posłużyć się</br>
+selektorem typu, ponieważ na stronie znajdują się inne znaczniki tego samego rodzaju co</br>
+wybrany element, ale nie chcemy, aby i one otrzymały takie samo formatowanie. </br>
+</p>
+
+    <h2>Kiedy ma zastosowanie lista klas?</h2>
+    Jeśli chcemy do pojedynczego elementu przypisać kilka różnych klas, należy posłużyć się</br>
+    poleceniem:</br>
+    <p class="ex">
+    &lt;selektor class=&quot;klasa1 klasa2 klasa3...&quot;&gt;...&lt;/selektor&gt;
+</p>
+
+Składnia teorytyczna listy klas 
+<div class="ex">
+
+    selektor.klasa1.klasa3 { cecha: wartość }
+
+</div>
+
+<div class="ex">
+
+    &lt;selektor class=&quot;klasa1 klasa2 klasa3&quot;&gt;...&lt;/selektor&gt;
+</div>
+
+<p><h2>Czym są podzbiory klas</h2></br>
+
+Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć</br>
+jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie. Na</br>
+przykład po wpisaniu:</br>
+
+<div class="ex">
+    selektor.klasa1.klasa3 { cecha: wartość }
+
+</div>
+zmieniony zostanie sposób formatowania elementu:
+
+<div class="ex">
+    &lt;selektor class=&quot;klasa1 klasa2 klasa3&quot;&gt;...&lt;/selektor&gt;
+</div>
+
+Kolejność podawania klas - zarówno w regule CSS, jak i w wartości atrybutu class="..." - nie</br>
+ma znaczenia.</br>
+
+<p><h2>Konkretny przykład definiowania klasy oraz jej użycia(wywołanie).</h2></p>
+
+<strong>Przykład definiowania i wywołania klasy:</strong></br>
+definicja arkusza styli
+<div class="ex">
+p.przyklad_klasa { color: red }
+</div>
+wywołanie
+<div class="ex">
+    &lt;p class=&quot;przyklad_klasa&quot;&gt;To jest akapit.&lt;/p&gt;
+
+</div>
+
+
+
+
+
+<p><h2>Klasa donosząca się tylko do jednego selektora</h2>
+Podobnie jak w przypadku identyfikatora, tak zdefiniowana klasa może zostać użyta tylko w
+tym selektorze, do którego została przypisana, np.:
+<div class="ex">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrzykład</br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdefinicja arkusza styli</br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.moja</br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{</br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor:red;</br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfont-size:12pt;</br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfont-style:italic;</br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+        </br>   
+    </div>
+<div class="ex">
+Wywołanie klasy tak określonej klasy również odbywa się za pomocą atrybutu class.</br>
+</br>
+&lt;p class=&rdquo;moja&rdquo;&gt;Przykład akapitu z określoną klasą&lt;/p&gt;</br>
+&lt;ol class=&rdquo;moja&rdquo;&gt;</br>
+&lt;h1 class=&rdquo;moja&rdquo;&gt;Przykład nagł&oacute;wka z określoną klasą&lt;/h1&gt;</br>
+</div>  
+</p>
+
+
+<p><h2>Jaki jest cel stosowania klasy uniwersalnej. Jakie jest znaczenie znaku „*” oraz kiedy
+można nie stosować tego znaku.</h2>
+
+W przypadku stosowanie klas, często podczas ich definiowania, nie wiemy jeszcze, w</br>
+stosunku do jakich znaczników będziemy chcieli je później użyć. Wtedy przydatny okazuje</br>
+się selektor uniwersalny, który pozwala przypisać własności klasy do wszystkich elementów,</br>
+którym zostanie ona nadana, bez względu na typ znacznika czyli użycie jest możliwe w</br>
+różnych znacznikach.</br>
+
+<strong>definicja arkusza styli</strong>
+<p class="ex">
+*.przyklad_uniwersalna { color: red }
+</p>
+Każdy element, któremu nadamy klasę <strong>przyklad_uniwersalna</strong>, będzie miał kolor czerwony.
+W tym przypadku gwiazdkę (*) w regule stylu można pominąć:
+<p class="ex">
+.przyklad_uniwersalna { font-size:12 pt; color: red }
+</p>
+
+
+
+
+</p>
+
+
+
+
+</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 10px solid black;
+    }
+    th, td:first-child {
+    background: #179ac1;
+    color: black;
+    padding: 10px 20px;
+    }
+    
+    th, td {
+    border: 4px solid black;
+    }
+    td, th {
+    background: #179ac1;
+    color: black;
+    padding: 20px 10px;
+    }
+
+
+    iframe{
+        background: rgb(15, 192, 223);
+        border: 5px dashed black;
+    
+
+
+
+}
+
+
+.menu{
+    border: 3px dashed black;
+}
+
+
+
+
+
+

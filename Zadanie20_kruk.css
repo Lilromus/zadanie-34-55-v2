@@ -1,0 +1,64 @@
+.div1{
+    background-color:#e9e6b8;
+    background-size: 1550px;
+    width: 1550px;
+    height:425px;
+}
+
+.p1{
+    color:orange;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div2{
+    background-color:#dd1b6c;
+    background-size: 1400px;
+    width: 1400px;
+    height:125px;
+}
+
+i{
+    color:green;
+    font-size:20px;
+    font-weight: bold;
+}
+
+strike{
+    color:red;
+    font-size:20px;
+}
+
+u{
+    color:purple;
+    font-size:20px;
+    text-decoration: overline;
+}
+
+.div3{
+    background-color:#b7f01b;
+    background-size: 1000px;
+    width: 1000px;
+    height:250px;
+}
+
+h1{
+    color:blue;
+    font-size:30px;
+    text-decoration: underline;
+}
+
+.li1{
+    color:blue;
+    font-size:25px;
+}
+
+.li2{
+    color:red;
+    font-size:20px;
+}
+
+.li3{
+    color:gray;
+    font-size:15px;
+}

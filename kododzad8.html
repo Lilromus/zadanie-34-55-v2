@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+ </head>
+ <body>
+   <p class="ex">
+    &lt;!DOCTYPE html&gt;</br>
+    &lt;html&gt;</br>
+     &lt;head&gt;</br>
+      &lt;meta charset=&quot;utf-8&quot;&gt;</br>
+      &lt;style&gt;</br>
+       .ex {</br>
+        border: solid 1px #000000;</br>
+        background: #fffff5;</br>
+        font-family: &quot;Courier New&quot;, Courier, monospace; </br>
+        padding: 7px;</br>
+        font-size: 80%;</br>
+        margin: 0 0 1em;</br>
+       }</br>
+      &lt;/style&gt;</br>
+     &lt;/head&gt;</br>
+     &lt;body&gt;</br>
+    &lt;p class=&quot;ex&quot;&gt;</br>
+    &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;1. Gdzie jest wstawiany</br>
+    lokalnego&lt;/font&gt;&lt;/br&gt;</br>
+    
+    &lt;font face = &quot;Arial&quot; size = &quot;4&quot;&gt;Wstawia się zawsze w części nagł&oacute;wkowej dokumentu (pomiędzy znacznikami  &amp;lt;head&amp;gt; a</br>
+    &amp;lt;/head&amp;gt;).&lt;/br&gt;</br>
+    Można go zastosować, gdy elementy kt&oacute;re pragniemy poddać formatowaniu,&lt;/br&gt;</br>
+    występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż</br>
+    domyślne).  </br>
+    &lt;/font&gt;</br>
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;2. Składnia teoretyczna&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;textarea&gt;</br>
+            &amp;lt;head&gt;</br>
+                (...)</br>
+                &amp;lt;style type=&quot;text/css&quot;&amp;gt;</br>
+                 /* &amp;lt;![CDATA[ */</br>
+                 selektor1 { cecha: wartość; cecha2: wartość2... }</br>
+                 selektor2 { cecha: wartość; cecha2: wartość2... }</br>
+                 (...)</br>
+                 /* ]]&gt; */</br>
+                 &amp;lt;/style&amp;gt;</br>
+                (...)</br>
+                &amp;lt;/head&amp;gt;</br>
+       &lt;/textarea&gt; </br> 
+    &lt;/p&gt;</br>
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;3. Jakie mogą być selektory&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (kom&oacute;rkatabeli) i inne. &lt;/br&gt;</br>
+        To właśnie elementom, kt&oacute;re znajdują się w kodzie źr&oacute;dłowym, pomiędzy tymi&lt;/br&gt;</br>
+        znacznikami, nadajemy atrybuty formatowania opisane w arkuszu.&lt;/font&gt;&lt;/br&gt;</br>
+    &lt;/p&gt;</br>
+    
+    
+    &lt;p class=&quot;ex&quot;&gt;</br>
+        &lt;font face = &quot;Arial&quot; size = &quot;5&quot;&gt;4. Jakie mogą być cechy i wartości&lt;/font&gt;&lt;/br&gt;</br>
+        &lt;font size = &quot;4&quot; face = &quot;Arial&quot;&gt;Jako &quot;cecha&quot; (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty&lt;/br&gt;</br>
+            formatowania nam chodzi (opisane w kolejnych rozdziałach).&lt;/br&gt;</br>
+            Natomiast jako wyraz &quot;wartość&quot; wpisujemy dokładną wartość atrybutu&lt;/font&gt;&lt;/br&gt;</br>
+        
+    &lt;/p&gt;</br>
+    
+    
+    
+    &lt;/body&gt;</br>
+    &lt;/html&gt;</br>
+  </p>
+ </body>
+</html>

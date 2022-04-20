@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .ex {
+    border: solid 1px #000000;
+    background: #fffff5;
+    font-family: "Courier New", Courier, monospace; 
+    padding: 7px;
+    font-size: 80%;
+    margin: 0 0 1em;
+   }
+  </style>
+ </head>
+ <body>
+<p class="ex">
+<font face = "Arial" size = "5">1. Gdzie jest wstawiany
+lokalnego</font></br>
+
+<font face = "Arial" size = "4">Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami  &lt;head&gt; a
+&lt;/head&gt;).</br>
+Można go zastosować, gdy elementy które pragniemy poddać formatowaniu,</br>
+występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż
+domyślne).  
+</font>
+</p>
+
+<p class="ex">
+    <font face = "Arial" size = "5">2. Składnia teoretyczna</font></br>
+    <textarea>
+        &lt;head>
+            (...)
+            &lt;style type="text/css"&gt;
+             /* &lt;![CDATA[ */
+             selektor1 { cecha: wartość; cecha2: wartość2... }
+             selektor2 { cecha: wartość; cecha2: wartość2... }
+             (...)
+             /* ]]> */
+             &lt;/style&gt;
+            (...)
+            &lt;/head&gt;
+   </textarea>  
+</p>
+
+<p class="ex">
+    <font face = "Arial" size = "5">3. Jakie mogą być selektory</font></br>
+    <font size = "4" face = "Arial">Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórkatabeli) i inne. </br>
+    To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi</br>
+    znacznikami, nadajemy atrybuty formatowania opisane w arkuszu.</font></br>
+</p>
+
+
+<p class="ex">
+    <font face = "Arial" size = "5">4. Jakie mogą być cechy i wartości</font></br>
+    <font size = "4" face = "Arial">Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty</br>
+        formatowania nam chodzi (opisane w kolejnych rozdziałach).</br>
+        Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu</font></br>
+    
+</p>
+
+
+
+</body>
+</html>
